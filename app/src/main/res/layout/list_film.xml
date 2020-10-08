@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            card_view:cardElevation="6dp"
+            card_view:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+
+            android:background="@color/colorPrimary">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    />
+
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+                <TextView
+                        android:id="@+id/nameEng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="nameEng"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent" />
+
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@android:color/transparent"
+                    android:background="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@android:string/ok"
+                    android:elevation="13dp"
+                    android:textSize="13dp"
+                    android:id="@+id/listNumbers"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:color/transparent"
+                    android:background="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@android:string/ok"
+                    android:elevation="13dp"
+                    android:textSize="13dp"
+                    android:id="@+id/rank"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</LinearLayout>
