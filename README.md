@@ -1,5 +1,5 @@
 # 100Film
-* Application that gives random movies out of 100 movies that must be watched before dying
+Application that gives random movies out of 100 movies that must be watched before dying
 * MVVM 
 * Room
 * Firebase
