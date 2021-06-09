@@ -61,4 +61,6 @@ dependencies {
 
     annotationProcessor 'androidx.room:room-compiler:2.2.2'
 
+    apply plugin: 'com.google.gms.google-services'
+
 }
